@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Smart Study Planner</h1>
+            <p>Organize tasks, track progress, and boost your productivity.</p>
+        </header>
+
+        <main>
+            <form id="task-form">
+                <div class="form-control">
+                    <label for="task-title">Task / Subject</label>
+                    <input type="text" id="task-title" placeholder="e.g., Read Chapter 5 of History" required>
+                </div>
+                <div class="form-control">
+                    <label for="task-due-date">Due Date</label>
+                    <input type="datetime-local" id="task-due-date" required>
+                </div>
+                <button type="submit">Add Study Task</button>
+            </form>
+
+            <section class="task-list-container">
+                <h2>Your Study Timeline</h2>
+                <ul id="task-list">
+                    <!-- Tasks will be dynamically inserted here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
